@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1756926764815",
+    "name": "Bangalore",
+    "address": "Hello155",
+    "phone": "8123144616",
+    "manager": "Hello",
+    "capacity": 100,
+    "currentStudents": 9,
+    "status": "active",
+    "establishedDate": "2025-09-03T19:12:44.815Z"
+  },
+  {
+    "id": "7269f07d-52ab-42bb-9c28-3b6bfdd07794",
+    "establishedDate": "2025-09-03T19:24:50.106Z",
+    "name": "tt",
+    "address": "Anand",
+    "phone": "5555",
+    "manager": "tt",
+    "capacity": 100,
+    "currentStudents": 50,
+    "status": "active"
+  },
+  {
+    "id": "03682165-0422-4362-a39c-f8ca88b0d1a3",
+    "establishedDate": "2025-09-03T19:38:47.595Z",
+    "name": "ss",
+    "address": "ss",
+    "phone": "333322",
+    "manager": "ss",
+    "capacity": 100,
+    "currentStudents": 0,
+    "status": "active"
+  }
+]

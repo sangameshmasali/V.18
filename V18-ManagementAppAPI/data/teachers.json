@@ -1,0 +1,70 @@
+[
+  {
+    "id": "1693738956789",
+    "name": "Suresh Kulkarni",
+    "email": "suresh.kulkarni@example.com",
+    "phone": "+91-9876543200",
+    "subjects": [
+      "Physics",
+      "Math"
+    ],
+    "branches": [
+      "V.18 - Jamkhandi"
+    ],
+    "qualifications": [
+      "MSc Physics",
+      "BEd"
+    ],
+    "experience": 8,
+    "salary": 3500,
+    "joinDate": "2025-09-01T09:00:00.000Z",
+    "onboardedBy": "Admin1",
+    "status": "active",
+    "classType": "regular"
+  },
+  {
+    "id": "1756909472976",
+    "name": "Anand biradar",
+    "email": "anandbiradar002@gmail.com",
+    "phone": "8123144616",
+    "subjects": [
+      "Biology"
+    ],
+    "branches": [
+      "Athani"
+    ],
+    "qualifications": [
+      "Bachelor of Arts (B.A.)"
+    ],
+    "experience": 10,
+    "salary": 4000,
+    "status": "active",
+    "classType": "regular",
+    "onboardedBy": "Sarah Johnson",
+    "joinDate": "2025-09-03T14:24:32.976Z"
+  },
+  {
+    "id": "1756920166694",
+    "name": "Anand biradar",
+    "email": "anandbiradar002@gmail.com",
+    "phone": "8123144616",
+    "subjects": [
+      "Mathematics",
+      "Science"
+    ],
+    "branches": [
+      "V.18 - Jamkhandi",
+      "Mudhol"
+    ],
+    "qualifications": [
+      "Master of Arts (M.A.)",
+      "Master of Education (M.Ed.)"
+    ],
+    "experience": 10,
+    "salary": 9000,
+    "status": "active",
+    "classType": "vacation",
+    "onboardedBy": "Sarah Johnson",
+    "joinDate": "2025-09-03T17:22:46.694Z"
+  }
+]
