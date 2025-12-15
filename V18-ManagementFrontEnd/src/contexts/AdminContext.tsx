@@ -28,11 +28,13 @@ export function AdminProvider({ children }: { children: ReactNode }) {
   const ACTIVITY_DEBOUNCE_MS = 3000; // don't refresh more often than every 3s
 
   const STORAGE_KEY = 'v18_admin_session';
+const API_URL = import.meta.env.VITE_API_URL + '/api';//"http://localhost:5000/api";
+
 
   const login = async (email: string, password: string): Promise<boolean> => {
   try {
     // 1️⃣ Check Super Admins from backend
-    const superRes = await fetch("http://localhost:5000/api/superadmins/login", {
+    const superRes = await fetch(API_URL+"/superadmins/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
@@ -54,7 +56,7 @@ export function AdminProvider({ children }: { children: ReactNode }) {
     }
 
     // 2️⃣ If not found, check Branch Admins from backend
-    const branchRes = await fetch("http://localhost:5000/api/branchadmins/login", {
+    const branchRes = await fetch(API_URL + "/branchadmins/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),

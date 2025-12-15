@@ -92,7 +92,8 @@ interface DataContextType {
 }
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
-const API_URL = "http://localhost:5000/api";
+// Use Vite's import.meta.env for accessing environment variables in the browser
+const API_URL = import.meta.env.VITE_API_URL + '/api';//"http://localhost:5000/api";//import.meta.env.VITE_API_URL ?? 
 
 export function DataProvider({ children }: { children: ReactNode }) {
   const { admin } = useAdmin();

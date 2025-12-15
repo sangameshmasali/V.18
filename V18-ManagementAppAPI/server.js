@@ -18,13 +18,16 @@ const SuperAdmin = require("./model/superAdmin");
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:3000",
+    "https://v18adminapi.vercel.app",
+    "https://v18-management-frontend.vercel.app", // Update this with your actual frontend URL when deployed
+  ],
+  credentials: true,
+}));
 app.use(bodyParser.json());
-
-// Root route to check if API is working
-app.get('/', (req, res) => {
-    res.json( "message: "+ "Welcome to V18 Management App API! The server is running successfully." );
-});
 
 // MongoDB Connection
 mongoose
@@ -65,6 +68,14 @@ function decrypt(payload) {
   }
 }
 
+//
+
+// Root route to check if API is working
+app.get('/', (req, res) => {
+    res.json( "message: "+ "Welcome to V18 Management App API! The server is running successfully." );
+});
+
+//
 // ------------------ Super Admin Login ------------------
 app.post("/api/superadmins/login", async (req, res) => {
   try {
