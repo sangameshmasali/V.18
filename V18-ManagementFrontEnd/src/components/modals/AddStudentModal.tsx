@@ -87,7 +87,7 @@ export default function AddStudentModal({ isOpen, onClose }: AddStudentModalProp
       return;
     }
 
-    const selectedBranch = branches.find(b => b.name === formData.branchId);
+    const selectedBranch = branches.find(b => b.id === formData.branchId);
     if (!selectedBranch) {
       alert('Please select a valid branch');
       return;
