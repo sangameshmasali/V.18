@@ -24,6 +24,8 @@ app.use(cors({
     "http://localhost:3000",
     "https://v18adminapi.vercel.app",
     "https://v-18-admin.vercel.app",
+    "https://admin.v18premiumtuition.com",
+    "https://v18adminapi.vercel.app",
     "https://v18-management-frontend.vercel.app", // Update this with your actual frontend URL when deployed
   ],
   credentials: true,
